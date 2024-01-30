@@ -1,0 +1,23 @@
+@import '../../stylesheets/mixins.scss';
+
+.header {
+  @include flex(row, flex-start, center);
+  @include size(100%, 10vh);
+  background-color: rgb(73, 129, 250);
+  box-sizing: border-box;
+
+  &__link {
+    @include size(160px, 100%);
+    @include indents(4px, 0);
+    @include flex($justify-content: center, $align-items: center);
+    background-color: inherit;
+    color: #FFF;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &:hover {
+      opacity: .5;
+      background-color: rgb(59, 105, 203);
+    }
+  }
+}

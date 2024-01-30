@@ -1,0 +1,19 @@
+@import '../../stylesheets/mixins.scss';
+
+.loader {
+  @include flex(row, center, center);
+  @include size(100%, 100vh);
+  font-weight: 700;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.loader::after {
+  content: "";
+  @include position(absolute, $top: 0, $left: 0);
+  @include size(100%, 100%);
+  background:rgba(0, 0, 0, 0.3) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}

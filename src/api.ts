@@ -33,7 +33,7 @@ export const addFavouriteCar = async (catId: string) => {
   }
 }
 
-export const getFavouriteCars = async (catId: string) => {
+export const getFavouriteCars = async () => {
   try {
     const res = await api.get('/favourites');
     return res.data;

@@ -1,0 +1,7 @@
+@import '../../stylesheets/mixins.scss';
+
+.empty {
+  @include flex(row, center, center);
+  @include indents(120px 0, 0);
+  text-transform: uppercase;
+}
