@@ -19,5 +19,9 @@
       opacity: .5;
       background-color: rgb(59, 105, 203);
     }
+
+    &:focus {
+      background-color: rgb(59, 105, 203);
+    }
   }
 }

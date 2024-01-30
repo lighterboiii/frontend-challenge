@@ -42,12 +42,12 @@ const Favourites: FC = () => {
   }
 
   return (
-    <div className="cats">
+    <div className="favs">
       {favs.map((cat: TFavourite) => (
-        <div key={cat.id} className="cats__cat">
-          <img src={cat.image.url} alt="фотка котика" className="cats__catImage" />
+        <div key={cat.id} className="favs__cat">
+          <img src={cat.image.url} alt="фотка котика" className="favs__catImage" />
           <button
-            className={cat.isClicked ? "cats__clickedButton" : "cats__addToFavButton"}
+            className={cat.isClicked ? "favs__clickedButton" : "favs__addToFavButton"}
             onClick={() => handleDeleteFromFavs(String(cat.id))}
             >
           </button>

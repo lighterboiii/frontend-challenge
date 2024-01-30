@@ -1,18 +1,8 @@
 @import '../../stylesheets/mixins.scss';
-
-@mixin buttonStyle {
-  @include size(40px, 40px);
-  @include position(absolute, $bottom: 16px, $right: 16px);
-  border: none;
-  cursor: pointer;
-}
+@import '../../stylesheets/catsListMixin.scss';
 
 .cats {
-  @include indents(40px, 0);
-  @include size(100%, 100%);
-  @include flex(row, flex-start, space-between, 40px);
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  @include catsStyle();
 
   &__cat {
     @include position(relative);
@@ -20,6 +10,13 @@
 
   &__catImage {
     @include size(225px, 225px);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    }
   }
 
   &__addToFavButton {

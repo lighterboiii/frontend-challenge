@@ -1,0 +1,14 @@
+@mixin buttonStyle {
+  @include size(40px, 40px);
+  @include position(absolute, $bottom: 16px, $right: 16px);
+  border: none;
+  cursor: pointer;
+}
+
+@mixin catsStyle {
+  @include indents(40px, 0);
+  @include size(100%, 100%);
+  @include flex(row, space-between, space-between, 40px);
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
