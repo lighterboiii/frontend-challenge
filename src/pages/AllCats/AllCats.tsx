@@ -11,7 +11,7 @@ const AllCats: FC = () => {
   useEffect(() => {
     const fetchCarsImages = async () => {
       try {
-        const images = await getCars(15);
+        const images = await getCars(40);
         const catWithClickState = images.map((cat: TCat) => ({ ...cat, isClicked: false }));
         setCats(catWithClickState);
         setLoading(false);

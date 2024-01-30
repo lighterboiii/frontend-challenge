@@ -1,8 +1,9 @@
+@import './stylesheets/mixins.scss';
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  background: #fff;
+  @include indents();
+  @include size(100%, 100%);
+  background: #FFF;
 }
