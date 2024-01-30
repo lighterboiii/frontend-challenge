@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from '../../pages/MainPage/Main';
+import AllCats from '../../pages/AllCats/AllCats';
 import Header from '../Header/Header';
 
 const App: FC = () => {
@@ -9,7 +9,7 @@ const App: FC = () => {
       <Header />
     <div>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<AllCats />} />
       </Routes>
     </div>
   </Router>
