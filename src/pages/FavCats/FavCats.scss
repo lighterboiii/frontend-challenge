@@ -3,6 +3,7 @@
 
 .favs {
   @include catsStyle();
+  justify-content: flex-start;
 
   &__cat {
     @include position(relative);
