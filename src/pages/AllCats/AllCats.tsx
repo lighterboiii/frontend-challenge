@@ -7,7 +7,7 @@ import { TCat } from "../../utils/types";
 const AllCats: FC = () => {
   const [cats, setCats] = useState<TCat[]>([]);
   const [loading, setLoading] = useState(true);
-  console.log(cats);
+ 
   useEffect(() => {
     const fetchCarsImages = async () => {
       try {

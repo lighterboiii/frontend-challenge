@@ -7,7 +7,7 @@ import { TFavourite } from "../../utils/types";
 const Favourites: FC = () => {
   const [favs, setFavs] = useState<TFavourite[]>([]);
   const [loading, setLoading] = useState(true);
-  console.log(favs);
+  
   const fetchFavourites = async () => {
     try {
       const favCatsData = await getFavouriteCars();
