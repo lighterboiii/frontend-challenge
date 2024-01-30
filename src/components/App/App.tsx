@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AllCats from '../../pages/AllCats/AllCats';
 import Header from '../Header/Header';

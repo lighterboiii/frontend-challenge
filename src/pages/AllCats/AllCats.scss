@@ -1,13 +1,38 @@
 @import '../../stylesheets/mixins.scss';
 
+@mixin buttonStyle {
+  @include size(40px, 40px);
+  @include position(absolute, $bottom: 16px, $right: 16px);
+  border: none;
+  cursor: pointer;
+}
+
 .cats {
   @include indents(40px, 0);
   @include size(100%, 100%);
-  @include flex(row, space-between, space-between, 40px);
+  @include flex(row, flex-start, space-between, 40px);
   flex-wrap: wrap;
   box-sizing: border-box;
 
+  &__cat {
+    @include position(relative);
+  }
+
   &__catImage {
     @include size(225px, 225px);
+  }
+
+  &__addToFavButton {
+    @include buttonStyle();
+    background: url('../../images/basic.svg') no-repeat;
+
+    &:hover {
+      background: url('../../images/clicked.svg') no-repeat;
+    }
+  }
+
+  &__clickedButton {
+    @include buttonStyle();
+    background: url('../../images/clicked.svg') no-repeat;
   }
 }

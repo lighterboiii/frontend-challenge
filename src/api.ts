@@ -42,3 +42,13 @@ export const getFavouriteCars = async () => {
     throw error;
   }
 }
+
+export const removeCarFromFavourites = async (catId: string) => {
+  try {
+    const res = await api.delete(`/favourites/${catId}`);
+    return res.data;
+  } catch (error) {
+    console.log('Ошибка при удалении котика из избранного', error);
+    throw error;
+  }
+}
