@@ -9,9 +9,7 @@
   }
 
   &__catImage {
-    @include size(225px, 225px);
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    @include catStyle();
 
     &:hover {
       transform: scale(1.1);

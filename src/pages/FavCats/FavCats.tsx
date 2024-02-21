@@ -34,7 +34,7 @@ const Favourites: FC = () => {
   }
 
   if (loading) {
-    return <Loader text="Проверка котиков" />
+    return <Loader text="Любим котиков" />
   }
 
   if (favs.length === 0) {

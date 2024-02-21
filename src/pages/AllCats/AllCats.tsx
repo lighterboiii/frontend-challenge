@@ -37,7 +37,7 @@ const AllCats: FC = () => {
   }
 
   if (loading) {
-    return <Loader text="Котики в пути" />
+    return <Loader text="Загружаем котиков" />
   }
 
   return (

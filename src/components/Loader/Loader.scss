@@ -2,17 +2,19 @@
 
 .loader {
   @include flex(row, center, center);
-  @include size(100%, 100vh);
-  font-weight: 700;
+  @include indents(120px 0 0, 0);
+  @include size(100%, 100%);
+  font-weight: 900;
   font-size: 54px;
   text-transform: uppercase;
-  color: #FFF;
+  color: #000;
+  box-sizing: border-box;
 
   &::after {
       content: "";
       @include position(absolute, $top: 0, $left: 0);
       @include size(100%, 100%);
-      background:rgba(0, 0, 0, 0.3) no-repeat center center;
+      background:rgba(0, 0, 0, 0.1) no-repeat center center;
       background-size: cover;
       z-index: -1;
   }

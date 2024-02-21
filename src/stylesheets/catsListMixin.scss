@@ -1,3 +1,5 @@
+@import '../stylesheets/mixins.scss';
+
 @mixin buttonStyle {
   @include size(40px, 40px);
   @include position(absolute, $bottom: 16px, $right: 16px);
@@ -8,7 +10,16 @@
 @mixin catsStyle {
   @include indents(40px, 0);
   @include size(100%, 100%);
-  @include flex(row, center, space-between, 40px);
+  @include flex(row, center, center, 20px);
   flex-wrap: wrap;
   box-sizing: border-box;
+}
+
+@mixin catStyle {
+  @include size(225px, 225px);
+  @include flex($justify-content: center, $align-items: center);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+  cursor: pointer;
 }

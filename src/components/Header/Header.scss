@@ -5,20 +5,24 @@
   @include size(100%, 10vh);
   background-color: rgb(73, 129, 250);
   box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
 
   &__links {
-    @include indents(0, 0 0 0 80px);
+    @include size(100%, 100%);
+    @include indents();
     @include flex(row);
     box-sizing: border-box;
   }
 
   &__link {
-    @include size(160px, 100%);
+    @include size(100%, 100%);
+    @include min-size(180px, 100%);
     @include indents(30px 0, 0);
     @include flex($justify-content: center, $align-items: center);
     background-color: inherit;
     color: #FFF;
     text-decoration: none;
+    text-transform: uppercase;
     box-sizing: border-box;
 
     &:hover {
